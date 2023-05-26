@@ -11,6 +11,7 @@
   --very-dark-blue: hsl(240, 100%, 5%);
 }
 
+/* FOR MOBILE VIEW */
 @media only screen and (max-width: 500px) {
   body {
     margin: 20px 20px 90px 20px;
@@ -33,7 +34,7 @@
   }
   nav {
     background-color: var(---off-white);
-    width: 60%;
+    width: 50%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -167,11 +168,22 @@
   .bodyUnscroll {
     overflow: hidden;
   }
+  .dim-background {
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s ease;
+  }
   .navlink {
-    left: 40%;
+    left: 50%;
   }
 }
 
+/* FOR BIGGER SCREENS */
 @media screen and (min-width: 500px) {
   * {
     margin: 0;
@@ -310,6 +322,7 @@
   }
 }
 
+/* ALSO FOR BIGGER SCREENS */
 @media only screen and (min-width: 1000px) {
   * {
     margin: 0;
